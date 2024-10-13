@@ -1,0 +1,15 @@
+<svg fill="none" viewBox="0 0 600 40" width="600" height="40" xmlns="http://www.w3.org/2000/svg">
+    <foreignObject width="100%" height="100%">
+        <div xmlns="http://www.w3.org/1999/xhtml">
+            <style>
+                .container {width: 100%; height: 40px; background-color: transparent; color: white; font-size: 0.8em; font-family: sans-serif;}
+                a {text-decoration: none;}
+            </style>
+            <div class="container" style="margin-bottom:3em;text-align:center;line-height:2">
+                <span style="border-radius:0.4em 0 0 0.4em;background:#4f4f4f;padding:0.2em 1em;color:#FFF;margin:0;">Supported Versions</span><span style="border-radius:0 0.4em 0.4em 0;background:#52a535;padding:0.2em 1em;color:#FFF;margin:0 1em 0 0;">1.20.2</span>
+                <span style="border-radius:0.4em 0 0 0.4em;background:#4f4f4f;padding:0.2em 1em;color:#FFF;margin:0;">Mod Loader</span><span style="border-radius:0 0.4em 0.4em 0;background:#dfd0b3;padding:0.2em 1em;color:#000;margin:0 1em 0 0;">Fabric</span>
+                <a href="./LICENSE"><span style="border-radius:0.4em 0 0 0.4em;background:#4f4f4f;padding:0.2em 1em;color:#FFF;margin:0;">License</span><span style="border-radius:0 0.4em 0.4em 0;background:#921b49;padding:0.2em 1em;color:#FFF;margin:0;">GNU GPLv3</span></a>
+            </div>
+        </div>
+    </foreignObject>
+</svg>

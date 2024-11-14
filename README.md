@@ -2,11 +2,9 @@
 <h1 style="text-align:center;">Mag-Mudge's Ecosystem</h1>
 <div style="width: 100%;text-align:center;">
   <img src="./banners/icon-bar-1_20_2.svg" alt="Mag-Mudge's Ecosystem" style="width: 600px;"><br>
-<!--
-  <a href="https://discord.gg/##++##" title="Mag-Mudge's Ecosystem at Discord" style="margin:0 1em 0 0;"><span style="border-radius:0.4em 0.4em 0.4em 0.4em;background:#5865f2;padding:0.2em 1em;color:#FFF;margin:0;">Discord</span></a>
-  <a href="https://www.curseforge.com/minecraft/mc-mods/##++##cfmodname##++####" title="The Minecraft Mod Mag-Mudge's Ecosystem at Curseforge" style="margin:0 1em 0 0;"><span style="border-radius:0.4em 0.4em 0.4em 0.4em;background:#e04e14;padding:0.2em 1em;color:#FFF;margin:0;">Curseforge</span></a>
-  <a href="https://modrinth.com/mod/##++##mrmodname##++##" title="The Minecraft Mod Mag-Mudge's Ecosystem at Modrinth"><span style="border-radius:0.4em 0.4em 0.4em 0.4em;background:#61a22f;padding:0.2em 1em;color:#FFF;margin:0;">Modrinth</span></a>
--->
+  <a href="https://www.curseforge.com/minecraft/mc-mods/mme-mag-mudges-ecosystem" title="The Minecraft Mod Mag-Mudge's Ecosystem at Curseforge" style="margin:0 0.5em;"><span style="border-radius:0.4em;background:#e04e14;padding:0.2em 1em;color:#FFF;margin:0;">Curseforge</span></a>
+  <a href="https://modrinth.com/mod/mme" title="The Minecraft Mod Mag-Mudge's Ecosystem at Modrinth" style="margin:0 0.5em;"><span style="border-radius:0.4em;background:#61a22f;padding:0.2em 1em;color:#FFF;margin:0;">Modrinth</span></a>
+  <a href="https://discord.gg/2TfkzahAMu" title="Mag-Mudge's Ecosystem at Discord" style="margin:0 0.5em;"><span style="border-radius:0.4em;background:#5865f2;padding:0.2em 1em;color:#FFF;margin:0;">Discord</span></a>
 </div>
 
 ## Dependency
@@ -37,7 +35,7 @@ Short overview of the mod's features:
 - new intermediates: <br>
   diamond circular saw blade, drill bit, milling cutter, milling machine base, milling machine turret, red alloy cable, plates, wires
 - new blocks: <br>
-  block variants, parquet (herringbone), chains, doors, isolated doors, secret doors, secret trapdoors, pressure trapdoors, trapdoors, wired blocks, repeating blocks, signal randomizer blocks, wired chains, wired fences, chimneys & redstone chimneys, statues, twin wire mesh fences, wire meshs, tables, wired tables
+  block variants, parquet (herringbone), chains, doors, isolated doors, secret doors, secret trapdoors, pressure trapdoors, trapdoors, wired blocks, red alloy glass, repeating blocks, signal randomizer blocks, wired chains, wired fences, chimneys & redstone chimneys, statues, twin wire mesh fences, wire meshs, tables, wired tables, (soul) torch buttons, rotary switches, spikes blocks, razor wire
 - new lighting blocks: <br>
   (soul) lanterns, wall (soul) lanterns, redstone lanterns, luminous panels & redstone-luminous panels, wall/ceiling lamps & redstone wall/ceiling lamps, floor lamps & redstone floor lamps, table lamps & redstone table lamps, chandeliers & redstone chandeliers, sconces & redstone sconces
 - new food: <br>
@@ -160,6 +158,8 @@ The crushed materials can then be used to produce other items. Or several crushe
 Crushed diamond is required, for example, for the production of a diamond circular saw blade.
 Crushed sulphur is needed for the rubber-sulphur-mixture from which plastic can be produced.
 Crushed copper and crushed tin are required for the raw red alloy mixture, from which red alloy can be produced in the furnace.
+
+The jaw crusher can also be used to crush stone into gravel or sandstone into sand, for example.
 
 #### Crafting
 The jaw crusher is crafted from the following items:
@@ -1358,13 +1358,6 @@ The following characteristics exist for certain wired blocks:
 - Wired Grass Blocks cannot be converted into farmland or paths.
 - Wired Log Blocks and Wired Wood Blocks can be subsequently converted into Wired Stripped Log Blocks or Wired Stripped Wood Blocks.
 
-The following blocks can be used to craft a repeating block:
-- Acacia Planks, Bamboo Planks, Birch Planks, Cherry Planks, Crimson Planks, Cypress Planks, Dark Oak Planks, Jungle Planks, Mangrove Planks, Oak Planks, Spruce Planks, Warped Planks
-- Andesite, Blackstone, Bricks, Chiseled Deepslate, Chiseled Nether Bricks, Chiseled Polished Blackstone, Chiseled Quartz Block, Chiseled Red Sandstone, Chiseled Sandstone, Chiseled Stone Bricks, Cobblestone, Cracked Deepslate Bricks, Cracked Deepslate Tiles, Cracked Nether Bricks, Cracked Polished Blackstone Bricks, Cracked Stone Bricks, Cut Red Sandstone, Cut Sandstone, Diorite, End Stone Bricks, Granite, Nether Bricks, Obsidian, Polished Andesite, Polished Basalt, Polished Blackstone, Polished Blackstone Bricks, Polished Diorite, Polished Granite, Red Nether Bricks, Red Sandstone, Sandstone, Smooth Basalt, Stone, Stone Bricks, Terracotta, White Terracotta
-- Dirt, Grass Block, Mycelium, Podzol, Soul Soil
-- Acacia Parquet (herringbone), Bamboo Parquet (herringbone), Birch Parquet (herringbone), Cherry Parquet (herringbone), Crimson Parquet (herringbone), Cypress Parquet (herringbone), Dark Oak Parquet (herringbone), Jungle Parquet (herringbone), Mangrove Parquet (herringbone), Oak Parquet (herringbone), Spruce Parquet (herringbone), Warped Parquet (herringbone)
-- Blackstone Bricks, Diorite Bricks, Granite Bricks, Sandstone Bricks, Small Blackstone Bricks, Small Diorite Bricks, Small Granite Bricks, Small Sandstone Bricks, Small Stone Bricks, Small Terracotta Bricks, Terracotta Bricks, Tiny Blackstone Bricks, Tiny Diorite Bricks, Tiny Granite Bricks, Tiny Sandstone Bricks, Tiny Stone Bricks, Tiny Terracotta Bricks
-
 #### Crafting
 Place of production:
 * Drill press
@@ -1721,6 +1714,101 @@ Stone tables (Crafting Table):
 |-----------------|---------------|-----------------|
 | red alloy cable | "stone table" | red alloy cable |
 
+### Torch buttons / Soul torch buttons
+The Torch Buttons or Soul Torch Buttons look like torches or soul torches. Like these, they can be placed on the floor and on walls and can be used as a light source.
+A torch button / soul torch button can also be pulled. In this case, they temporarily emit a redstone signal like a button. After a short time, they return to their original position.
+
+#### Crafting
+Place of production:
+* Milling machine
+* Crafting Table
+
+##### Recipes
+Torch Button:
+
+|                |       |                |
+|----------------|-------|----------------|
+| red alloy wire | torch | red alloy wire |
+
+Soul Torch Button:
+
+|                |            |                |
+|----------------|------------|----------------|
+| red alloy wire | soul torch | red alloy wire |
+
+### Rotary switches
+Rotary switches have the same function and behavior as the lever. However, they differ in appearance.
+
+#### Crafting
+Place of production:
+* Milling machine
+* Crafting Table
+
+##### Recipes
+
+|             |
+|-------------|
+| steel bar   |
+| cobblestone |
+
+### Spikes Blocks
+Players and mobs take damage on contact with spiked blocks. The blocks reduce speed so that they can only be crossed slowly. It is not possible to jump inside a spiked block.
+Pitfalls equipped with spike blocks are deadly traps from which it is difficult to escape alive.
+
+Spikes blocks are available in wooden and steel versions. An axe is required to dismantle wooden spikes blocks and at least a iron pickaxe for steel spikes blocks.
+The steel spikes blocks cause more damage than the wooden versions. In addition, the steel variant can be moved with the piston, whereas the wooden spikes blocks cannot.
+
+#### Crafting
+Place of production:
+* Milling machine
+* Crafting Table
+
+##### Recipes
+Bamboo Spikes block (Crafting Table / Milling machine):
+
+|                     |                     |                     |
+|---------------------|---------------------|---------------------|
+| bamboo              |                     | bamboo              |
+| bamboo              | bamboo              | bamboo              |
+| bamboo planks plate | bamboo planks plate | bamboo planks plate |
+
+Bamboo Spikes block (Milling machine):
+
+|               |                |
+|---------------|----------------|
+| bamboo planks | bamboo planks  |
+
+Wooden Spikes block (Crafting Table / Milling machine):
+
+|                           |                           |                           |
+|---------------------------|---------------------------|---------------------------|
+| stick                     |                           | stick                     |
+| stick                     | stick                     | stick                     |
+| "wooden" planks plate (1) | "wooden" planks plate (1) | "wooden" planks plate (1) |
+
+(1) The three planks plates must be of the same type: Acacia Planks Plate, Birch Planks Plate, Cherry Planks Plate, Crimson Planks Plate, Cypress Planks Plate, Dark Oak Planks Plate, Jungle Planks Plate, Mangrove Planks Plate, Oak Planks Plate, Spruce Planks Plate or Warped Planks Plate
+
+Wooden Spikes block (Milling machine):
+
+|                     |                     |
+|---------------------|---------------------|
+| "wooden" planks (1) | "wooden" planks (1) |
+
+(1) The two plank blocks must be of the same type: Acacia Planks, Birch Planks, Cherry Planks, Crimson Planks, Cypress Planks, Dark Oak Planks, Jungle Planks, Mangrove Planks, Oak Planks, Spruce Planks or Warped Planks
+
+Steel Spikes block (Crafting Table / Milling machine):
+
+|             |             |             |
+|-------------|-------------|-------------|
+| steel bar   |             | steel bar   |
+| steel bar   | steel bar   | steel bar   |
+| steel plate | steel plate | steel plate |
+
+Steel Spikes block (Milling machine):
+
+|             |             |
+|-------------|-------------|
+| steel ingot | steel ingot |
 
 
 ## Statues
@@ -1840,7 +1928,8 @@ steel fence with bronze twin wire mesh fences top, steel fence with iron twin wi
 > one fence placed in one block (left), two fences, three fences, four fences placed in one block (right)
 
 #### Barrier
-While twin wire mesh fences appear to be a single block tall and have a hitbox height of one block, their collision box (for entities) is 1.5 blocks tall, meaning most mobs cannot jump over them without the Jump Boost status effect. 
+Twin wire mesh fences, unlike "normal" Minecraft fences, are only one block high. This means that most mobs can easily jump over them. To make them a real barrier, at least two twin wire mesh fences must be placed on top of each other.
+Alternatively, a twin wire mesh fences top or twin wire mesh fences top wave can be placed on top of a twin wire mesh fence.
 They are transparent to light and have visual gaps in the model. Spiders can climb over a twin wire mesh fences, just like any other vertical object.
 
 #### Crafting
@@ -1938,8 +2027,8 @@ There are corresponding gates for the twin wire mesh fences tops and twin wire m
 #### Barrier
 A twin wire mesh fence gate can be used as a switchable barrier.
 
-Although a twin wire mesh fence gate appears to be only one block tall, a closed twin wire mesh fence gate is a barrier one and a half blocks high. 
-Most mobs cannot jump over a twin wire mesh fence gate, and entities on top of the twin wire mesh fence gate stand half a block above it.
+Twin wire mesh fence gates are only one block high. This means that most mobs can easily jump over them. To make them a real switchable barrier, at least two twin wire mesh fence gates must be placed on top of each other.
+Alternatively, a twin wire mesh fence gate top or twin wire mesh fence gate top wave can be placed on top of a twin wire mesh fence gate.
 
 An open twin wire mesh fence gate is completely non-solid. Multiple open twin wire mesh fence gates next to each other can be passed through as if the entire space is open.
 
@@ -2021,11 +2110,31 @@ Place of production:
 |----------------|------------------|
 | "source ingot" | "source ingot"   |
 
-### Twin wire mesh fence razor wire corner
-Where fences form a corner and razor wire is placed on the outside, there is a gap in the corner. This can be closed with a razor wire corner.
+### Wall razor wire
+Wall razor wire can be placed on the side of any solid block or twin wire mesh fence.
 
-Razor wire corners can only be placed next to razor wire. As with razor wire, only one razor wire corner can be placed per block.
+The razor wire is automatically placed on all solid blocks and fences with a suitable orientation in neighbouring blocks. If the last neighbouring solid block or fence with suitable alignment is dismantled, the wall razor wire block drops automatically.
 
+If the razor wire is touched from below, players and mobs will take damage. However, players and mobs can stand on the razor wire without taking damage.
+
+Wall razor wire can be crafted from bronze, iron or steel.
+
+#### Crafting
+Place of production:
+* Milling machine
+
+##### Recipes
+3x Twin wire mesh fence razor wires:
+
+|                |                  | 
+|----------------|------------------|
+| "source ingot" | "source ingot"   |
+
+
+### Razor wire corner
+Where fences form a corner and razor wire is placed on the outside, there is a gap in the corner. The same happens with corners made of solid blocks with wall razor wire attached. This gap can be closed with a razor wire corner.
+
+Razor wire corners can only be placed next to razor wire (wall razor wire or twin wire mesh fence razor wire). Only one razor wire corner can be placed per block.
 The razor wire corner is automatically attached to all razor wire with suitable alignment in neighbouring blocks. If the last neighbouring razor wire with suitable alignment is dismantled, the razor wire corner block drops automatically.
 
 If the razor wire corner is touched from below, players and mobs will take damage. However, players and mobs can stand on the razor wire corner without taking damage.

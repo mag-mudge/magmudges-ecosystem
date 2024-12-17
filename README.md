@@ -12,6 +12,7 @@
 - Fabric API
 ### Includes
 - TerraformersMC Wood API
+- Structurized Reborn
 ### Optional
 - Roughly Enough Items Fabric (REI)
 
@@ -35,13 +36,15 @@ Short overview of the mod's features:
 - new intermediates: <br>
   diamond circular saw blade, drill bit, milling cutter, milling machine base, milling machine turret, red alloy cable, plates, wires
 - new blocks: <br>
-  block variants, parquet (herringbone), chains, doors, isolated doors, secret doors, secret trapdoors, pressure trapdoors, trapdoors, wired blocks, red alloy glass, repeating blocks, signal randomizer blocks, wired chains, wired fences, chimneys & redstone chimneys, statues, twin wire mesh fences, wire meshs, tables, wired tables, (soul) torch buttons, rotary switches, spikes blocks, razor wire
+  block variants, parquet (herringbone), chains, doors, isolated doors, secret doors, secret trapdoors, pressure trapdoors, trapdoors, wired blocks, red alloy glass, repeating blocks, signal randomizer blocks, wired chains, wired fences, chimneys & redstone chimneys, statues, twin wire mesh fences, wire meshs, tables, wired tables, (soul) torch buttons, rotary switches, spikes blocks, razor wire, bone piles, chairs, benches, poufs
 - new lighting blocks: <br>
   (soul) lanterns, wall (soul) lanterns, redstone lanterns, luminous panels & redstone-luminous panels, wall/ceiling lamps & redstone wall/ceiling lamps, floor lamps & redstone floor lamps, table lamps & redstone table lamps, chandeliers & redstone chandeliers, sconces & redstone sconces
 - new food: <br>
   green prickly pear, red prickly pear, sloe berries
 - new villager professions: <br>
   forest botanist, quarryman
+- new structures: <br>
+  towers, forest botanist house, forest botanist house (village)
 
 
 
@@ -744,6 +747,8 @@ In addition to the blocks already listed above (ore blocks, wooden blocks, etc.)
 Block variants with different textures can be created from some blocks. These include brick textures or those with ornaments. Gold ingots or lapis lazuli can additionally be used for the ornaments, for example.
 Not all variants are available for all blocks.
 
+Stairs and slabs can also be made from most of these block variants.
+
 The following block variants can be crafted from some blocks:  
 "Block" Bricks, Small "Block" Bricks, Tiny "Block" Bricks, Dented "Block", Framed "Block", Tile Framed "Block", "Block"-FSM, "Block" with inscription, Helix-"Block", Maze-"Block", "Block" with dot relief, "Block" with double meander ornament, "Block" Pavers (zigzag), S-"Block"bricks, Small "Block" Tiles, "Block" with golden FSM, "Block" with golden inscription, "Block" with golden double meander ornament, "Block" with lapis double meander ornament    
 _"Block"_ is a placeholder for the name of the block, e.g. diorite or stone.
@@ -771,25 +776,26 @@ Place of production:
 
 ##### Recipes
 
-|         |         |         | 
-|---------|---------|---------|
-| "block" | "block" | "block" |
-| "block" |         |         |
+|             |             |             | 
+|-------------|-------------|-------------|
+| "block" (1) | "block" (1) | "block" (1) |
+| "block" (1) |             |             |
 
 Ornament with gold:
 
-|         |            |         | 
-|---------|------------|---------|
-| "block" | "block"    | "block" |
-| "block" | gold ingot |         |
+|             |             |             | 
+|-------------|-------------|-------------|
+| "block" (1) | "block" (1) | "block" (1) |
+| "block" (1) | gold ingot  |             |
 
 Ornament with lapis:
 
-|         |              |         | 
-|---------|--------------|---------|
-| "block" | "block"      | "block" |
-| "block" | lapis lazuli |         |
+|             |              |             | 
+|-------------|--------------|-------------|
+| "block" (1) | "block" (1)  | "block" (1) |
+| "block" (1) | lapis lazuli |             |
 
+(1) The source blocks must be made of the same material.
 
 ### Parquet (herringbone)
 Herringbone parquet blocks can be crafted from wooden plank blocks.
@@ -806,11 +812,12 @@ Place of production:
 ##### Recipe
 4 herringbone parquet blocks are crafted from 4 plank blocks of the **same** wood type.
 
-|               |               |               | 
-|---------------|---------------|---------------|
-| "plank block" | "plank block" | "plank block" |
-| "plank block" |               |               |
+|                   |                   |                   | 
+|-------------------|-------------------|-------------------|
+| "plank block" (1) | "plank block" (1) | "plank block" (1) |
+| "plank block" (1) |                   |                   |
 
+(1) The source blocks must be made of the same material.
 
 ### Chains
 Steel chains drops itself only when mined with an iron pickaxe or higher. Otherwise, they drop nothing.
@@ -976,7 +983,6 @@ Steel Redstone Lantern:
 | "glass pane" (1) | bronze redstone lantern / redstone lantern / steel redstone lantern | "glass pane" (1) |
 
 (1) The two glass panes must be of the same type, e.g. two (uncolored) glass panes or two green-stained glass panes.
-
 
 ### Luminous Panels & Redstone-Luminous Panels
 Luminous Panels and Redstone-Luminous Panels are flat light sources with a light level of 15. Luminous Panels light up permanently, Redstone-Luminous Panel only light up when a redstone signal is received.
@@ -1212,17 +1218,19 @@ Place of production:
 ##### Recipes
 Crafting Table:
 
-|         |            | 
-|---------|------------|
-| "plate" |            |
-|         | steel door |
-| "plate" |            |
+|             |            | 
+|-------------|------------|
+| "plate" (1) |            |
+|             | steel door |
+| "plate" (1) |            |
 
 Milling machine:
 
-|            |         |         | 
-|------------|---------|---------|
-| steel door | "plate" | "plate" |
+|            |             |             | 
+|------------|-------------|-------------|
+| steel door | "plate" (1) | "plate" (1) |
+
+(1) The plates must be made of the same material.
 
 ### Secret trapdoors
 Secret trapdoors are made of steel trapdoors that are covered with plates (e.g. stone plates). On the covered side, these trapdoors look like the blocks with whose plates they are covered.
@@ -1356,7 +1364,7 @@ The following characteristics exist for certain wired blocks:
 - Wired Grass Blocks, Wired Mycelium and Wired Podzol can only be mined with a tool enchanted with Silk Touch. Otherwise, it drops Wired Dirt.
 - The wiring for Wired Dirt, Wired Grass Blocks, Wired Mycelium and Wired Podzol, which is wired twice, is always arranged horizontally.
 - Wired Grass Blocks cannot be converted into farmland or paths.
-- Wired Log Blocks and Wired Wood Blocks can be subsequently converted into Wired Stripped Log Blocks or Wired Stripped Wood Blocks.
+- Wired Log Blocks can be subsequently converted into Wired Stripped Log Blocks.
 
 #### Crafting
 Place of production:
@@ -1427,8 +1435,6 @@ The following blocks can be used to craft a repeating block:
 - Soul Soil
 - Acacia Parquet (herringbone), Bamboo Parquet (herringbone), Birch Parquet (herringbone), Cherry Parquet (herringbone), Crimson Parquet (herringbone), Cypress Parquet (herringbone), Dark Oak Parquet (herringbone), Jungle Parquet (herringbone), Mangrove Parquet (herringbone), Oak Parquet (herringbone), Spruce Parquet (herringbone), Warped Parquet (herringbone)
 - Blackstone Bricks, Diorite Bricks, Granite Bricks, Sandstone Bricks, Small Blackstone Bricks, Small Diorite Bricks, Small Granite Bricks, Small Sandstone Bricks, Small Stone Bricks, Small Terracotta Bricks, Terracotta Bricks, Tiny Blackstone Bricks, Tiny Diorite Bricks, Tiny Granite Bricks, Tiny Sandstone Bricks, Tiny Stone Bricks, Tiny Terracotta Bricks
-
-Repeating Log Blocks and Repeating Wood Blocks cannot be subsequently converted into Repeating Stripped Log Blocks or Repeating Stripped Wood Blocks.
 
 #### Crafting
 Place of production:
@@ -1595,17 +1601,19 @@ Place of production:
 ##### Recipes
 2x Chimney:
 
-|                 |                |                | 
-|-----------------|----------------|----------------|
-| "source block"  | "source block" | "source block" |
-| "source block"  |                |                |
+|                    |                    |                    | 
+|--------------------|--------------------|--------------------|
+| "source block" (1) | "source block" (1) | "source block" (1) |
+| "source block" (1) |                    |                    |
 
 2x Redstone Chimney:
 
-|                 |                  |                  | 
-|-----------------|------------------|------------------|
-| "source block"  | "source block"   | "source block"   |
-| "source block"  | red alloy cable  | red alloy cable  |
+|                    |                    |                    | 
+|--------------------|--------------------|--------------------|
+| "source block" (1) | "source block" (1) | "source block" (1) |
+| "source block" (1) | red alloy cable    | red alloy cable    |
+
+(1) The source blocks must be made of the same material.
 
 ### Wire meshs
 Wire meshes are transparent, horizontally oriented blocks with a height of 2 pixels (1/8 block). They are never oriented vertically.
@@ -1621,9 +1629,11 @@ Place of production:
 ##### Recipes
 4x Wire meshs:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
 
 ### Tables
 Tables are decorative blocks. Adjacent tables / wired-tables, whose table tops are made of the same material, join together and only have table legs at the outer corners.
@@ -1635,7 +1645,7 @@ Tables are decorative blocks. Adjacent tables / wired-tables, whose table tops a
 Place of production:
 * Milling machine
 
-The following blocks can be used to craft Chimneys and Redstone Chimneys:
+The following blocks can be used to craft tables:
 - Acacia Planks, Bamboo Planks, Birch Planks, Cherry Planks, Crimson Planks, Cypress Planks, Dark Oak Planks, Jungle Planks, Mangrove Planks, Oak Planks, Spruce Planks, Warped Planks
 - Polished Andesite, Polished Blackstone, Polished Diorite, Polished Granite, Smooth Stone
 
@@ -1644,16 +1654,20 @@ For stone tables, either iron or steel ingot are also required.
 ##### Recipes
 Wooden tables:
 
-|                       |                       | 
-|-----------------------|-----------------------|
-| "wooden source block" | "wooden source block" |
+|                           |                           | 
+|---------------------------|---------------------------|
+| "wooden source block" (1) | "wooden source block" (1) |
+
+(1) The source blocks must be made of the same material.
 
 Stone tables:
 
-|                      |                |                |
-|----------------------|----------------|----------------|
-| "stone source block" | "source ingot" | "source ingot" |
-| "source ingot"       | "source ingot" |                |
+|                      |                    |                    |
+|----------------------|--------------------|--------------------|
+| "stone source block" | "source ingot" (1) | "source ingot" (1) |
+| "source ingot" (1)   | "source ingot" (1) |                    |
+
+(1) The source ingots must be made of the same material.
 
 ### Wired tables
 Wired tables are identical to tables. However, they forward redstone signals horizontally. They also accept redstone signals from above and transmit them upwards. There is no signal exchange downwards.
@@ -1666,7 +1680,7 @@ Place of production:
 * Milling machine
 * Crafting Table
 
-The following blocks can be used to craft Chimneys and Redstone Chimneys:
+The following blocks can be used to craft wired tables:
 - Acacia Planks, Bamboo Planks, Birch Planks, Cherry Planks, Crimson Planks, Cypress Planks, Dark Oak Planks, Jungle Planks, Mangrove Planks, Oak Planks, Spruce Planks, Warped Planks
 - Polished Andesite, Polished Blackstone, Polished Diorite, Polished Granite, Smooth Stone
 
@@ -1677,10 +1691,12 @@ Tables can also be equipped with cables to craft wired tables.
 ##### Recipes
 Wooden tables (Milling machine):
 
-|                       |                       |                 |
-|-----------------------|-----------------------|-----------------|
-| "wooden source block" | "wooden source block" | red alloy cable |
-| red alloy cable       |                       |                 |
+|                           |                           |                 |
+|---------------------------|---------------------------|-----------------|
+| "wooden source block" (1) | "wooden source block" (1) | red alloy cable |
+| red alloy cable           |                           |                 |
+
+(1) The source blocks must be made of the same material.
 
 Wooden tables (Milling machine):
 
@@ -1696,11 +1712,13 @@ Wooden tables (Crafting Table):
 
 Stone tables (Milling machine):
 
-|                      |                |                 |
-|----------------------|----------------|-----------------|
-| "stone source block" | "source ingot" | "source ingot"  |
-| "source ingot"       | "source ingot" | red alloy cable |
-| red alloy cable      |                |                 |
+|                      |                    |                    |
+|----------------------|--------------------|--------------------|
+| "stone source block" | "source ingot" (1) | "source ingot" (1) |
+| "source ingot" (1)   | "source ingot" (1) | red alloy cable    |
+| red alloy cable      |                    |                    |
+
+(1) The source ingots must be made of the same material.
 
 Stone tables (Milling machine):
 
@@ -1713,6 +1731,76 @@ Stone tables (Crafting Table):
 |                 |               |                 |
 |-----------------|---------------|-----------------|
 | red alloy cable | "stone table" | red alloy cable |
+
+### Chairs
+Chairs are not just decorative blocks, they are also functional.
+
+If a chair is placed while sneaking, it is placed in a lying/tipped position.
+
+#### Crafting
+Place of production:
+* Milling machine
+
+The following blocks can be used to craft chairs:
+- Acacia Planks, Bamboo Planks, Birch Planks, Cherry Planks, Crimson Planks, Cypress Planks, Dark Oak Planks, Jungle Planks, Mangrove Planks, Oak Planks, Spruce Planks, Warped Planks
+
+![Various seating furniture](./images/chairs_benches_poufs.jpg)
+> Various seating furniture (chairs, benches, poufs)
+
+##### Recipes
+Chairs:
+
+|                    |                    | 
+|--------------------|--------------------|
+| "source block" (1) | "source block" (1) |
+
+(1) The source blocks must be made of the same material.
+
+### Benches
+Benches are not just decorative blocks, they are also functional.
+
+Benches with the same orientation and made of the same material placed next to each other form a long bench.
+
+#### Crafting
+Place of production:
+* Milling machine
+
+The following blocks can be used to craft benches:
+- Acacia Planks, Bamboo Planks, Birch Planks, Cherry Planks, Crimson Planks, Cypress Planks, Dark Oak Planks, Jungle Planks, Mangrove Planks, Oak Planks, Spruce Planks, Warped Planks
+
+##### Recipes
+Benches:
+
+|                    |                    | 
+|--------------------|--------------------|
+| "source block" (1) | "source block" (1) |
+
+(1) The source blocks must be made of the same material.
+
+### Poufs
+Poufs are comfortable pieces of seating furniture made from wool that are not only decorative but also allow players to sit on them.
+
+Poufs can be crafted from a block of wool on the milling machine. The pouf has the same color as the wool block.
+
+The color of a pouf can be changed in the inventory or at the crafting table using a dye.
+
+#### Crafting
+Place of production:
+* Milling machine
+* Inventory (2x2) / Crafting Table
+
+##### Recipes
+Poufs (Milling machine):
+
+|            | 
+|------------|
+| wool block |
+
+Poufs (Inventory (2x2) / Crafting Table):
+
+|      |     |
+|------|-----|
+| pouf | dye |
 
 ### Torch buttons / Soul torch buttons
 The Torch Buttons or Soul Torch Buttons look like torches or soul torches. Like these, they can be placed on the floor and on walls and can be used as a light source.
@@ -1834,9 +1922,11 @@ The following blocks can be used to craft Creeper Statues:
 - stone-based: andesite, blackstone, dark prismarine, deepslate, diorite, end stone, granite, quartz, red sandstone, sandstone, stone, terracotta
 
 #### Recipes
-|                 |                  |           | 
-|-----------------|------------------|-----------|
-| "source block"  | "source block"   | black dye |
+|                    |                    |           | 
+|--------------------|--------------------|-----------|
+| "source block" (1) | "source block" (1) | black dye |
+
+(1) The source blocks must be made of the same material.
 
 ### Large Cross
 The following blocks can be used to craft Large Crosses:
@@ -1845,9 +1935,11 @@ The following blocks can be used to craft Large Crosses:
 - wood-/hypha-based: stripped acacia log, stripped birch log, stripped cherry log, stripped crimson stem, stripped cypress log, stripped dark oak log, stripped jungle log, stripped mangrove log, stripped oak log, stripped spruce log, stripped warped stem
 
 #### Recipes
-|                 |                  | 
-|-----------------|------------------|
-| "source block"  | "source block"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source block" (1) | "source block" (1) |
+
+(1) The source blocks must be made of the same material.
 
 ### Large Cross with bar
 The following blocks can be used to craft Large Crosses with bar:
@@ -1856,9 +1948,11 @@ The following blocks can be used to craft Large Crosses with bar:
 - wood-/hypha-based: stripped acacia log, stripped birch log, stripped cherry log, stripped crimson stem, stripped cypress log, stripped dark oak log, stripped jungle log, stripped mangrove log, stripped oak log, stripped spruce log, stripped warped stem
 
 #### Recipes
-|                 |                  | 
-|-----------------|------------------|
-| "source block"  | "source block"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source block" (1) | "source block" (1) |
+
+(1) The source blocks must be made of the same material.
 
 ### Guard with axe
 There is the statue with the axe in the right hand and one with the axe in the left hand.
@@ -1869,10 +1963,12 @@ The following blocks can be used to craft Guards with axe:
 - stone-based: andesite, blackstone, dark prismarine, deepslate, diorite, end stone, granite, quartz, red sandstone, sandstone, stone, terracotta
 
 #### Recipes
-|                |                |           | 
-|----------------|----------------|-----------|
-| "source block" | "source block" | black dye |
-| steel ingot    | steel ingot    |           |
+|                    |                    |           | 
+|--------------------|--------------------|-----------|
+| "source block" (1) | "source block" (1) | black dye |
+| steel ingot        | steel ingot        |           |
+
+(1) The source blocks must be made of the same material.
 
 ### Guard with sword
 There is the statue with the sword in the right hand and one with the sword in the left hand.
@@ -1883,19 +1979,23 @@ The following blocks can be used to craft Guards with sword:
 - stone-based: andesite, blackstone, dark prismarine, deepslate, diorite, end stone, granite, quartz, red sandstone, sandstone, stone, terracotta
 
 #### Recipes
-|                |                |           | 
-|----------------|----------------|-----------|
-| "source block" | "source block" | black dye |
-| steel ingot    | steel ingot    |           |
+|                    |                    |           | 
+|--------------------|--------------------|-----------|
+| "source block" (1) | "source block" (1) | black dye |
+| steel ingot        | steel ingot        |           |
+
+(1) The source blocks must be made of the same material.
 
 ### Moai
 The following blocks can be used to craft Moais:
 - stone-based: andesite, blackstone, dark prismarine, deepslate, diorite, end stone, granite, quartz, red sandstone, sandstone, stone, terracotta
 
 #### Recipes
-|                 |                  |           | 
-|-----------------|------------------|-----------|
-| "source block"  | "source block"   | black dye |
+|                    |                    |           | 
+|--------------------|--------------------|-----------|
+| "source block" (1) | "source block" (1) | black dye |
+
+(1) The source blocks must be made of the same material.
 
 ### Trident
 The following blocks can be used to craft Tridents:
@@ -1903,9 +2003,11 @@ The following blocks can be used to craft Tridents:
 - stone-based: andesite, blackstone, dark prismarine, deepslate, diorite, end stone, granite, quartz, red sandstone, sandstone, stone, terracotta
 
 #### Recipes
-|                 |                  | 
-|-----------------|------------------|
-| "source block"  | "source block"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source block" (1) | "source block" (1) |
+
+(1) The source blocks must be made of the same material.
 
 
 
@@ -1939,9 +2041,11 @@ Place of production:
 ##### Recipes
 4x Twin wire mesh fences:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
 
 ### Twin wire mesh fences with decorative element
 Twin wire mesh fences with decorative element have the same properties as twin wire mesh fences but have a decorative element (purely visual).
@@ -1985,9 +2089,11 @@ Place of production:
 ##### Recipes
 8x Twin wire mesh fences top:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
 
 ### Twin wire mesh fences top wave
 Twin wire mesh fences top wave is slightly higher than half a block high. It can be used to give the Twin wire mesh fences a wavy top.
@@ -1999,9 +2105,11 @@ Place of production:
 ##### Recipes
 7x Twin wire mesh fences top wave:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
 
 ### Twin wire mesh fence gates
 Twin wire mesh fence gates are the gates for the twin wire mesh fences. In contrast to the fences, the gates can only be placed on one side of a block.
@@ -2041,21 +2149,23 @@ Place of production:
 ##### Recipes
 2x Twin wire mesh fence gates:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
 
 4x Twin wire mesh fence gate tops:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
 
 4x Twin wire mesh fence gate top waves:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
 
 ### Twin wire mesh fence posts / Twin wire mesh fence half-post
 If fences are placed in diagonally adjacent blocks, the fences are not connected. This creates a visual gap (see image).
@@ -2077,15 +2187,17 @@ Place of production:
 ##### Recipes
 8x Twin wire mesh fence posts:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
 
 16x Twin wire mesh fence half-posts:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
 
 ### Twin wire mesh fence razor wire
 Twin wire mesh fence razor wire can only be attached to twin wire mesh fences. In difference to the fences, only one razor wire can be placed per block.
@@ -2106,9 +2218,11 @@ Place of production:
 ##### Recipes
 4x Twin wire mesh fence razor wires:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
 
 ### Wall razor wire
 Wall razor wire can be placed on the side of any solid block or twin wire mesh fence.
@@ -2126,10 +2240,11 @@ Place of production:
 ##### Recipes
 3x Twin wire mesh fence razor wires:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
 
+(1) The source ingots must be made of the same material.
 
 ### Razor wire corner
 Where fences form a corner and razor wire is placed on the outside, there is a gap in the corner. The same happens with corners made of solid blocks with wall razor wire attached. This gap can be closed with a razor wire corner.
@@ -2151,9 +2266,16 @@ Place of production:
 ##### Recipes
 8x Twin wire mesh fence razor wire corners:
 
-|                |                  | 
-|----------------|------------------|
-| "source ingot" | "source ingot"   |
+|                    |                    | 
+|--------------------|--------------------|
+| "source ingot" (1) | "source ingot" (1) |
+
+(1) The source ingots must be made of the same material.
+
+### Bone piles
+Bone piles are purely "decorative" blocks. Bone piles can have a skull or a sword. Each pile is available in different versions.
+
+When mining a pile of bones, it never drops itself. It always drops bones and a skull or a sword if the pile contains them.
 
 
 
@@ -2226,3 +2348,19 @@ Job site block / Workstation:
 |            |
 | Master     | Emerald      | 2                | 0.05             | Red alloy ingot      | 3        | 12                    | 30             |
 |            | Emerald      | 2                | 0.05             | Luminous metal ingot | 2        | 12                    | 30             |
+
+
+
+## Structures
+Various structures are generated in the world by the Mod.
+
+### Towers
+Remains of ancient civilizations can be found in jungles, forests, taiga, plains and savannas. These are various towers of different designs and in different states of preservation.
+
+Surprises may await you within the ancient walls, or death may await the careless adventurer.
+Archaeologists speculate about the purpose of these towers: Were they part of border fortifications, did they secure ancient trade routes, or were they ancient cult centers?
+
+### Forest botanist house / forest botanist house (village)
+Forest botanists have settled in some plain and taiga villages. Accordingly, their houses can sometimes be found there.
+
+Less frequently, however, forest botanists also build a house outside of villages. This is why you come across their homes in some forests. Peaceful guests are always welcome.

@@ -2,6 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2024-12-17
+
+### Added
+
+- Stairs and slabs added for most block variants.
+- Bone pile, bone pile with skull and bone pile with sword
+- Wired blocks can now also be crafted from the following blocks:
+  - Acacia Log, Birch Log, Block of Bamboo, Cherry Log, Crimson Stem, Cypress Log, Dark Oak Log, Jungle Log, Mangrove Log, Oak Log, Spruce Log, Warped Stem
+  - Stripped Acacia Log, Stripped Birch Log, Stripped Block of Bamboo, Stripped Cherry Log, Stripped Crimson Stem, Stripped Cypress Log, Stripped Dark Oak Log, Stripped Jungle Log, Stripped Mangrove Log, Stripped Oak Log, Stripped Spruce Log, Stripped Warped Stem
+- seating furniture:
+  - chairs
+  - benches
+  - poufs
+- structures:
+  - tower 1, tower 2, tower 3 (each in various configurations)
+  - forest botanist house
+- village structure:
+  - plain forest botanist house
+  - taiga forest botanist house
+
+### Fixed
+
+- Methods "mirror" and "rotate" added to: AbstractLitFacingShapeBlock, AbstractTwinWireMeshFenceBlock, AbstractTwinWireMeshFencePostBlock, SpikesBlock, TableBlock, TableWiredBlock, TwinWireMeshFenceSecurityBlock, TwinWireMeshFenceSecurityCornerBlock, WallRazorWireBlock
+
+
 ## [1.1.0] - 2024-11-14
 
 ### Added

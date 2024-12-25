@@ -1,0 +1,32 @@
+name: I found a bug!
+description: "Report some kind of issue. If necessary, first clarify on Discord whether it is actually a bug."
+labels: [ "type: bug" ]
+body:
+    -   type: textarea
+        attributes:
+            label: Description
+            description: "Please describe the issue in as much detail as possible. Explain what happened and what should have happened instead.
+            Attach screenshots or videos if these could be useful."
+        validations:
+            required: true
+
+    -   type: input
+        attributes:
+            label: Game Log
+            description: "For a better root cause analysis, we also need the game log.
+            The file \"latest.log\" in the \"logs\" folder of your Minecraft folder contains the game log. Please upload the file e.g. to https://mclo.gs/ and provide the link here.
+            Please **do not** paste the contents of the log file here. This would make this bug report hard to read."
+        validations:
+            required: true
+
+    -   type: textarea
+        attributes:
+            label: Debug Information
+            description: "Please optionally execute the command \"/create debuginfo\" in the game.
+            This will copy useful information to the clipboard, which is very helpful for debugging. Please paste this information here."
+        validations:
+            required: false
+
+    -   type: markdown
+        attributes:
+            value: "Thank you for taking the time to write a report and contribute to the improvement of MME!"

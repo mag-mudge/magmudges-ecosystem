@@ -1,0 +1,25 @@
+name: My game crashed!
+description: Report an issue that crashes the game.
+labels: [ "type: crash" ]
+body:
+    -   type: textarea
+        attributes:
+            label: Context
+            description: "What were you doing when the game crashed?
+            Attach screenshots or videos if these could be useful."
+        validations:
+            required: true
+
+    -   type: input
+        attributes:
+            label: Crash Report
+            description: "For the root cause analysis, we need the crash report.
+            All crash report files can be found in the \"crash-reports\" folder of your Minecraft folder.
+            The crash report of the newest file is required. Please upload the file e.g. to https://mclo.gs/ and provide the link here.
+            Please **do not** paste the contents of the crash report file here. This would make this bug report hard to read."
+        validations:
+            required: true
+
+    -   type: markdown
+        attributes:
+            value: "Thank you for taking the time to write a report and contribute to the improvement of MME!"

@@ -36,7 +36,7 @@ Short overview of the mod's features:
 - new intermediates: <br>
   diamond circular saw blade, drill bit, milling cutter, milling machine base, milling machine turret, red alloy cable, plates, wires
 - new blocks: <br>
-  block variants, parquet (herringbone), chains, doors, isolated doors, secret doors, secret trapdoors, pressure trapdoors, trapdoors, wired blocks, red alloy glass, repeating blocks, signal randomizer blocks, wired chains, wired fences, chimneys & redstone chimneys, statues, twin wire mesh fences, wire meshs, tables, wired tables, (soul) torch buttons, rotary switches, spikes blocks, razor wire, bone piles, chairs, benches, poufs
+  block variants, parquet (herringbone), half timbered blocks, chains, doors, isolated doors, secret doors, secret trapdoors, pressure trapdoors, trapdoors, wired blocks, red alloy glass, repeating blocks, signal randomizer blocks, wired chains, wired fences, chimneys & redstone chimneys, statues, twin wire mesh fences, wire meshs, tables, wired tables, (soul) torch buttons, rotary switches, spikes blocks, razor wire, bone piles, chairs, benches, poufs, windows, shelves, book piles, sword holders, signposts
 - new lighting blocks: <br>
   (soul) lanterns, wall (soul) lanterns, redstone lanterns, luminous panels & redstone-luminous panels, wall/ceiling lamps & redstone wall/ceiling lamps, floor lamps & redstone floor lamps, table lamps & redstone table lamps, chandeliers & redstone chandeliers, sconces & redstone sconces
 - new food: <br>
@@ -44,7 +44,7 @@ Short overview of the mod's features:
 - new villager professions: <br>
   forest botanist, quarryman
 - new structures: <br>
-  towers, forest botanist house, forest botanist house (village)
+  towers, forest botanist house, forest botanist house (village), quarryman house (village)
 
 
 
@@ -743,6 +743,9 @@ Place of production:
 ## Blocks
 In addition to the blocks already listed above (ore blocks, wooden blocks, etc.), there are among others also the blocks listed below.
 
+Added wooden blocks, such as wooden tables, usually behave like "normal" wooden Minecraft blocks.
+This means that they usually catch fire near lava, for example, and can be burned as fuel in furnaces, for example.
+
 ### Block variants
 Block variants with different textures can be created from some blocks. These include brick textures or those with ornaments. Gold ingots or lapis lazuli can additionally be used for the ornaments, for example.
 Not all variants are available for all blocks.
@@ -756,6 +759,8 @@ _"Block"_ is a placeholder for the name of the block, e.g. diorite or stone.
 Block variants can be crafted from the following blocks:  
 Blackstone, Diorite, Granite, Sandstone, Stone, Terracotta
 
+Cobblestone and white dye can be used to craft whitewashed cobblestone.
+
 #### Usage
 Their main use is for decoration. 
 
@@ -763,9 +768,12 @@ They can be used to craft wired blocks.
 
 Plates can be crafted from these blocks if all block sides have the same texture. This means that plates cannot be crafted from blocks with ornaments.
 
-
-![Room built from various block variants.](./images/block-variants.jpg)
-> Room built from various block variants.
+|                                                                                                                     |                                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| ![Room built from various block variants.](./images/block-variants.jpg)<br> Room built from various block variants. | ![Whitewashed cobblestone](./images/whitewashed_cobblestone.jpg)<br> Whitewashed cobblestone                     |
+| ![Block variants based on blackstone.](./images/blackstone-variants.jpg)<br> Block variants based on blackstone.    | ![Block variants based on diorite.](./images/diorite-variants.jpg)<br> Block variants based on diorite.          |
+| ![Block variants based on granite.](./images/granite-variants.jpg)<br> Block variants based on granite.             | ![Block variants based on sandstone.](./images/sandstone-variants.jpg)<br> Block variants based on sandstone.    |
+| ![Block variants based on stone.](./images/stone-variants.jpg)<br> Block variants based on stone.                   | ![Block variants based on terracotta.](./images/terracotta-variants.jpg)<br> Block variants based on terracotta. |
 
 #### Crafting
 4 block variants are crafted from 4 source blocks of the **same** type.  
@@ -775,20 +783,29 @@ Place of production:
 * Milling machine
 
 ##### Recipes
+4x block variant:
 
 |             |             |             | 
 |-------------|-------------|-------------|
 | "block" (1) | "block" (1) | "block" (1) |
 | "block" (1) |             |             |
 
-Ornament with gold:
+4x Whitewashed cobblestone:
+
+|             |             |             | 
+|-------------|-------------|-------------|
+| cobblestone | cobblestone | cobblestone |
+| cobblestone | white dye   | white dye   |
+| white dye   |             |             |
+
+4x Ornament with gold:
 
 |             |             |             | 
 |-------------|-------------|-------------|
 | "block" (1) | "block" (1) | "block" (1) |
 | "block" (1) | gold ingot  |             |
 
-Ornament with lapis:
+4x Ornament with lapis:
 
 |             |              |             | 
 |-------------|--------------|-------------|
@@ -799,6 +816,9 @@ Ornament with lapis:
 
 ### Parquet (herringbone)
 Herringbone parquet blocks can be crafted from wooden plank blocks.
+
+![Herringbone parquet](./images/parquet.jpg)
+> Herringbone parquet
 
 #### Usage
 Their main use is for decoration.
@@ -818,6 +838,79 @@ Place of production:
 | "plank block" (1) |                   |                   |
 
 (1) The source blocks must be made of the same material.
+
+### Half timbered blocks
+Half-timbered blocks can be crafted from bricks, cobblestone or whitewashed cobblestone as well as wooden planks and, if necessary, dye. The timber framework of a block can have different patterns.
+The pattern is defined during crafting, but can be changed later on the milling machine.
+
+The timber framing of half timbered bricks blocks is always white, while half timbered whitewashed cobblestone framing is always dark brown.
+In the case of half-timbered cobblestone blocks, the timber framework corresponds to the planks used for crafting.
+
+If the player sneaks when placing the block, the block orientation is rotated by 180°. This changes the orientation of the pattern.
+
+|                                                                                                                               |                                                                                                                                        |
+|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| ![Half-timbered houses](./images/fachwerkhaeuser.jpg)<br> Half-timbered houses                                                |                                                                                                                                        |                                               
+| ![Half timbered bricks](./images/half-timbered-bricks.jpg)<br> Half timbered bricks                                           | ![Half timbered whitewashed cobblestone](./images/half-timbered-whitewashed_cobblestone.jpg)<br> Half timbered whitewashed cobblestone |
+| ![Acacia half timbered cobblestone](./images/acacia-half-timbered-cobblestone.jpg)<br> Acacia half timbered cobblestone       | ![Birch half timbered cobblestone](./images/birch-half-timbered-cobblestone.jpg)<br> Birch half timbered cobblestone                   |
+| ![Cherry half timbered cobblestone](./images/cherry-half-timbered-cobblestone.jpg)<br> Cherry half timbered cobblestone       | ![Cypress half timbered cobblestone](./images/cypress-half-timbered-cobblestone.jpg)<br> Cypress half timbered cobblestone             |
+| ![Dark oak half timbered cobblestone](./images/dark-oak-half-timbered-cobblestone.jpg)<br> Dark oak half timbered cobblestone | ![Jungle half timbered cobblestone](./images/jungle-half-timbered-cobblestone.jpg)<br> Jungle half timbered cobblestone                |
+| ![Mangrove half timbered cobblestone](./images/mangrove-half-timbered-cobblestone.jpg)<br> Mangrove half timbered cobblestone | ![Oak half timbered cobblestone](./images/oak-half-timbered-cobblestone.jpg)<br> Oak half timbered cobblestone                         |
+| ![Spruce half timbered cobblestone](./images/spruce-half-timbered-cobblestone.jpg)<br> Spruce half timbered cobblestone       |                                                                                                                                        |
+
+#### Usage
+They can be used to build half-timbered houses.
+
+#### Crafting
+Place of production:
+* Milling machine
+
+##### Recipe
+4x Half timbered bricks:
+
+|        |               |           | 
+|--------|---------------|-----------|
+| bricks | bricks        | bricks    |
+| bricks | wooden planks | white dye |
+
+Half timbered bricks (change half-timbered pattern):
+
+|                      |   |   | 
+|----------------------|---|---|
+| Half timbered bricks |   |   |
+
+4x Half timbered whitewashed cobblestone:
+
+|                         |                         |                         | 
+|-------------------------|-------------------------|-------------------------|
+| whitewashed cobblestone | whitewashed cobblestone | whitewashed cobblestone |
+| whitewashed cobblestone | wooden planks (1)       | brown dye               |
+
+(1) Wooden planks other than dark oak planks.
+
+|                         |                         |                         | 
+|-------------------------|-------------------------|-------------------------|
+| whitewashed cobblestone | whitewashed cobblestone | whitewashed cobblestone |
+| whitewashed cobblestone | dark oak planks         |                         |
+
+Half timbered whitewashed cobblestone (change half-timbered pattern):
+
+|                                       |   |   | 
+|---------------------------------------|---|---|
+| Half timbered whitewashed cobblestone |   |   |
+
+4x Half timbered cobblestone:
+
+|             |               |             | 
+|-------------|---------------|-------------|
+| cobblestone | cobblestone   | cobblestone |
+| cobblestone | wooden planks |             |
+
+Half timbered cobblestone (change half-timbered pattern):
+
+|                           |   |   | 
+|---------------------------|---|---|
+| Half timbered cobblestone |   |   |
 
 ### Chains
 Steel chains drops itself only when mined with an iron pickaxe or higher. Otherwise, they drop nothing.
@@ -1308,6 +1401,83 @@ Place of production:
 | "secret trapdoor" | red alloy plate | polished black stone pressure plate |
 
 
+### Windows
+There are two basic types of windows - fixed windows (cannot be opened) and openable windows. Each of these basic forms is available with three different frame shapes - single-casement, double-casement and cross-frame windows.
+
+Fixed windows are crafted from wooden planks and glass panes on the milling machine.
+Fixed windows can be fitted with steel nuggets (hinges) on the milling machine or at the crafting table to craft openable windows.
+
+The wood type of the frame corresponds to that of the wooden planks used. This means that if oak planks are used for production, you will get a different window than if birch planks are used.
+Single and double-casement windows are connected to windows below and above them, which are crafted from the same materials, so that there is no frame between these windows and a continuous glass front is created.
+
+If a window is opened, the window above and below it also opens, provided it is made of the same materials.
+
+Single-casement windows can be installed in such a way that they open either to the left or right, similar to doors.
+
+The windows must be dismantled with a cross head screwdriver in order to drop as an item. If no cross-head screwdriver is used, it will be destroyed - like glass panes.
+
+![Wired Chains](./images/window-different-wood-types.jpg)
+> Single-casement windows (3x4) in different types of wood. <br>
+> As the frames are made from different types of wood, the windows do not connect.
+
+![Wired Chains](./images/window-frame-types-3x2.jpg)
+> If the frame is made of the same wood, windows arranged one above the other connect. This creates a larger glass front for single and double-casement windows. <br>
+> left: 2x3 Fixed Windows / Windows; 2x3 Fixed Double Windows / Double Windows; right: 2x3 Fixed Cross-Windows / Cross-Windows
+
+#### Crafting
+Place of production (fixed windows):
+* Milling machine
+
+Place of production (openable windows):
+* Crafting Table
+* Milling machine
+
+##### Recipes
+4x Fixed Windows / Fixed Double Windows / Fixed Cross-Windows:
+
+|                 |            |            | 
+|-----------------|------------|------------|
+| "wooden" planks | glass pane | glass pane |
+| glass pane      | glass pane |            |
+
+1x (openable) Window (Crafting Table):
+
+|              |              |                | 
+|--------------|--------------|----------------|
+| steel nugget |              |                |
+| steel nugget | Fixed Window |                |
+| steel nugget |              |                |
+
+1x (openable) Double Window (Crafting Table):
+
+|              |                     |              | 
+|--------------|---------------------|--------------|
+| steel nugget |                     | steel nugget |
+|              | Fixed Double Window |              |
+| steel nugget |                     | steel nugget |
+
+1x (openable) Cross-Window (Crafting Table):
+
+|              |                    |              | 
+|--------------|--------------------|--------------|
+| steel nugget |                    | steel nugget |
+|              | Fixed Cross-Window |              |
+| steel nugget |                    | steel nugget |
+
+1x (openable) window (Milling machine):
+
+|              |              |              | 
+|--------------|--------------|--------------|
+| Fixed window | steel nugget | steel nugget |
+| steel nugget |              |              |
+
+1x (openable) Fixed Double Window / Fixed Cross-Window (Milling machine):
+
+|                                          |              |              | 
+|------------------------------------------|--------------|--------------|
+| Fixed Double Window / Fixed Cross-Window | steel nugget | steel nugget |
+| steel nugget                             | steel nugget |              |
+
 ### Red alloy glass
 Red alloy glass is like normal glass blocks with the difference that a redstone signal makes it opaque (white). The red alloy glass also transmits the signal to neighboring red alloy glasses in a weakened form.
 
@@ -1506,8 +1676,14 @@ Place of production:
 Wired chains are like the "normal" chains, but they also transmit redstone signals.
 They do not receive a signal from or emit a signal to the following blocks: redstone dust, buttons, pressure plates, calibrated sculk sensor, comparator, daylight detector, detector rail, lectern, lever, lightning rod, redstone torch, repeater and trapped chest
 
+Redstone lanterns and Redstone lamps can be hung on wired chains placed horizontally. They then connect to the wired chains and receive a Redstone signal from them.
+
 The following blocks can be used to craft a wired fence:
 Bronze Chain, Iron Chain, Steel Chain
+
+![Wired Chains](./images/wired-chains-and-redstone-lanterns.jpg)
+> Wired chains with attached Redstone lamp and Redstone lanterns. <br>
+> The redstone signal is transmitted to the neighboring, connected lamps and lanterns, but not to those without a connection.
 
 #### Crafting
 Place of production:
@@ -1638,6 +1814,8 @@ Place of production:
 ### Tables
 Tables are decorative blocks. Adjacent tables / wired-tables, whose table tops are made of the same material, join together and only have table legs at the outer corners.
 
+Items can be placed on tables to create new decorative elements.
+
 ![Various tables](./images/tables.jpg)
 > On the right a polished blackstone iron table with a table lamp and on the left an acacia plank table. 
 
@@ -1731,6 +1909,30 @@ Stone tables (Crafting Table):
 |                 |               |                 |
 |-----------------|---------------|-----------------|
 | red alloy cable | "stone table" | red alloy cable |
+
+### Shelves
+Wall shelves are decorative elements. They can be crafted from different types of wood on the milling machine.
+
+Items can be placed on shelves to create new decorative elements.
+
+![Shelves](./images/shelves.jpg)
+> Various shelves, some with piles of books.
+
+#### Crafting
+Place of production:
+* Milling machine
+
+The following blocks can be used to craft chairs:
+- Acacia Planks, Bamboo Planks, Birch Planks, Cherry Planks, Crimson Planks, Cypress Planks, Dark Oak Planks, Jungle Planks, Mangrove Planks, Oak Planks, Spruce Planks, Warped Planks
+
+##### Recipes
+4x Shelves (Milling machine):
+
+|                     |                           |
+|---------------------|---------------------------|
+| "wooden planks" (1) | "wooden planks" (1) |
+
+(1) The source blocks must be made of the same material.
 
 ### Chairs
 Chairs are not just decorative blocks, they are also functional.
@@ -2277,7 +2479,100 @@ Bone piles are purely "decorative" blocks. Bone piles can have a skull or a swor
 
 When mining a pile of bones, it never drops itself. It always drops bones and a skull or a sword if the pile contains them.
 
+### Book piles
+Book piles can be created by placing a book on a table or shelf. A book then stands or lies on the table/shelf.
+Further books can be added to this book, making the book pile larger. A pile can contain a maximum of 5 books.
+Piles of books are available in different variations (selected at random).
 
+If the book pile is mined, then as many books drop as the book pile contains books.
+If the player is sneaking, one of the books will drop as a book pile item, when the book pile is mined. This can be placed on any other block - not just on tables and shelves.
+
+Piles of books are destroyed on contact with water or when they are pushed by a piston. In this case, the corresponding number of books will drop.
+
+A book can also be removed from the pile of books by pressing "use" when the main hand is empty. This places the book item directly into the player's main hand.
+If the book pile contains only one book, the player receives a book pile item instead of a book item.
+
+![Book piles](./images/book_piles.jpg)
+> Book piles on tables, shelves and on the floor.
+
+#### Crafting
+Place a book on a table or shelf (hold a book in your main hand and press "use").
+
+Place of production:
+* table / wired table
+* shelf
+
+### Sword holders
+Sword holders can be used to store and decoratively display swords. The sword holder can hold up to two swords.
+
+If a placed sword holder is used with a sword in hand, the sword is placed in it. If the sword holder is used again with a sword in hand, this will also be placed in the sword holder.
+However, if the sword holder is used with an empty hand, the last sword placed is removed from it.
+
+When a sword holder is placed "normally", the first sword is positioned with the hilt to the left.
+If a sword holder is placed while the player is sneaking, the first sword is positioned with the hilt to the right.
+
+![Sword holders](./images/sword-holders.jpg)
+> left to right: empty sword holder, "normal" placed sword holder with one diamond sword (hilt on the left side), "sneaking" placed sword holder with one iron sword (hilt on the right side), "normal" placed sword holder with two swords
+
+#### Crafting
+Place of production:
+* Crafting Table
+* Milling Machine
+
+##### Recipes
+
+Crafting Table:
+
+|           |             |           |
+|-----------|-------------|-----------|
+| steel bar | steel bar   |           | 
+| steel bar | steel bar   | steel bar |
+|           | steel plate |           |
+
+Milling Machine:
+
+|             |           |           |
+|-------------|-----------|-----------|
+| steel plate | steel bar | steel bar | 
+| steel bar   | steel bar | steel bar |
+
+### Signposts
+Signposts are crafted from signs and metal hardware (steel nuggets) and are used like signs. They can be placed on a block or attached to a wall. They can be lettered and the lettering can be colored.
+
+In contrast to "normal" signs, the signposts point in one or two directions due to the metal hardware.
+
+If a signpost is placed, it points to the left. If a cross head screwdriver is used on it, the direction of the arrow changes. It then points to the right.
+When it is used again, the top two lines of text point to the left and the bottom two to the right. Then the top two lines of text point to the right and the bottom two to the left.
+And finally, the signpost points to the left again. This directional information always refers to the front of the sign.
+
+To change the lettering on a signpost, the procedure is the same as for a "normal" sign, except that no cross head screwdriver may be held in the hand.
+
+![Signposts](./images/signposts.jpg)
+> Cherry Signposts, Crimson Signposts, Oak Signposts and Acacia Signposts
+
+#### Crafting
+Signposts can be crafted on the crafting table or on the milling machine. The amount of material required for crafting on the milling machine is slightly less than on the crafting table.
+
+Place of production:
+* Crafting Table
+* Milling Machine
+
+##### Recipes
+
+Crafting Table:
+
+|              |               |   |
+|--------------|---------------|---|
+| steel nugget | steel nugget  |   | 
+| steel nugget | "normal" sign |   |
+| steel nugget | steel plate   |   |
+
+Milling Machine:
+
+|               |              |              |
+|---------------|--------------|--------------|
+| "normal" sign | steel nugget | steel nugget | 
+| steel nugget  | steel nugget |              |
 
 ## Food
 
@@ -2306,23 +2601,24 @@ Job site block / Workstation:
 #### Offers
 | Level      | Item wanted      | Default quantity | Price multiplier | Item given         | Quantity | Trades until disabled | XP to villager |
 |------------|------------------|------------------|------------------|--------------------|----------|-----------------------|----------------|
-| Novice     | Acacia sapling   | 20               | 0.05             | Emerald            | 1        | 16                    | 2              |
-|            | Birch sapling    | 20               | 0.05             | Emerald            | 1        | 16                    | 2              |
-|            | Oak sapling      | 20               | 0.05             | Emerald            | 1        | 16                    | 2              |
+| Novice     | Acacia sapling   | 10               | 0.05             | Emerald            | 1        | 16                    | 2              |
+|            | Birch sapling    | 10               | 0.05             | Emerald            | 1        | 16                    | 2              |
+|            | Oak sapling      | 10               | 0.05             | Emerald            | 1        | 16                    | 2              |
 |            |
-| Apprentice | Cypress sapling  | 20               | 0.05             | Emerald            | 1        | 16                    | 10             |
-|            | Dark oak sapling | 20               | 0.05             | Emerald            | 1        | 16                    | 10             |
-|            | Emerald          | 1                | 0.05             | Mangrove propagule | 4        | 16                    | 5              |
-|            | Emerald          | 1                | 0.05             | Jungle sapling     | 4        | 16                    | 5              |
+| Apprentice | Cypress sapling  | 10               | 0.05             | Emerald            | 1        | 16                    | 10             |
+|            | Dark oak sapling | 10               | 0.05             | Emerald            | 1        | 16                    | 10             |
+|            | Emerald          | 5                | 0.05             | Mangrove propagule | 1        | 16                    | 5              |
+|            | Emerald          | 5                | 0.05             | Jungle sapling     | 1        | 16                    | 5              |
 |            |
-| Journeyman | Cherry sapling   | 20               | 0.05             | Emerald            | 1        | 12                    | 20             |
-|            | Emerald          | 1                | 0.05             | Azalea             | 4        | 12                    | 10             |
+| Journeyman | Cherry sapling   | 10               | 0.05             | Emerald            | 1        | 12                    | 20             |
+|            | Emerald          | 5                | 0.05             | Azalea             | 1        | 12                    | 10             |
+|            | Emerald          | 1                | 0.05             | Cocoa beans        | 3        | 12                    | 10             |
 |            |
-| Expert     | Emerald          | 1                | 0.05             | Privet sapling     | 4        | 12                    | 15             |
-|            | Emerald          | 1                | 0.05             | Sloe sapling       | 4        | 12                    | 15             |
+| Expert     | Emerald          | 5                | 0.05             | Privet sapling     | 1        | 12                    | 15             |
+|            | Emerald          | 5                | 0.05             | Sloe sapling       | 1        | 12                    | 15             |
 |            |
-| Master     | Emerald          | 1                | 0.05             | Firethorn sapling  | 4        | 12                    | 30             |
-|            | Emerald          | 1                | 0.05             | Flowering azalea   | 4        | 12                    | 30             |
+| Master     | Emerald          | 5                | 0.05             | Firethorn sapling  | 1        | 12                    | 30             |
+|            | Emerald          | 5                | 0.05             | Flowering azalea   | 1        | 12                    | 30             |
 
 ### Quarryman
 The quarryman mainly trades metallic (raw) materials.
@@ -2360,7 +2656,21 @@ Remains of ancient civilizations can be found in jungles, forests, taiga, plains
 Surprises may await you within the ancient walls, or death may await the careless adventurer.
 Archaeologists speculate about the purpose of these towers: Were they part of border fortifications, did they secure ancient trade routes, or were they ancient cult centers?
 
-### Forest botanist house / forest botanist house (village)
-Forest botanists have settled in some plain and taiga villages. Accordingly, their houses can sometimes be found there.
+### Forest botanist house
+Forest botanists have settled in some plains and taiga villages. Accordingly, their houses can sometimes be found there.
 
 Less frequently, however, forest botanists also build a house outside of villages. This is why you come across their homes in some forests. Peaceful guests are always welcome.
+
+#### Locations
+- forests (outside villages)
+- plains village
+- plains zombie village
+- taiga village
+- taiga zombie village
+
+### Quarryman (village)
+Quarrymans have settled in some plains villages. Accordingly, their houses can sometimes be found there.
+
+#### Locations
+- plains village
+- plains zombie village

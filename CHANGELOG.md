@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-01-22
+
+### Added
+
+- Whitewashed cobblestone
+- Half timbered blocks
+- village structure:
+  - quarryman house (plains village)
+  - quarryman house (plains zombie village)
+  - forest botanist house (plains zombie village)
+  - forest botanist house (taiga zombie village)
+- windows
+  - fixed: Fixed Window, Double Fixed Window, Fixed Cross-Window
+  - openable: Window, Double Window, Cross-Window
+- shelves
+- sword holders
+- signposts
+
+### Changed
+
+- Redstone lanterns and Redstone lamps can now be hung on wired chains placed horizontally. They then connect to the wired chains and receive a Redstone signal from the wired chains.
+- Forest botanist
+  - Trade offer changed in consideration of the wandering trader.
+  - At the "Journeyman" level, the forest botanist now potentially also sells cocoa beans.
+- structures "forest botanist house (plains village)" and "forest botanist house (taiga village)" optimized
+
+### Fixed
+
+- Recipe advancements of the block variants corrected.
+- Loot table of the block variant slabs corrected.
+- Server-side drill press recipe bug fixed.
+
+
 ## [1.2.0] - 2024-12-17
 
 ### Added
@@ -19,8 +52,8 @@ All notable changes to this project will be documented in this file.
   - tower 1, tower 2, tower 3 (each in various configurations)
   - forest botanist house
 - village structure:
-  - plain forest botanist house
-  - taiga forest botanist house
+  - forest botanist house (plains village)
+  - forest botanist house (taiga village)
 
 ### Fixed
 
